@@ -8,7 +8,7 @@
 import UIKit
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    private var viewModel = MovieViewModel() // The ViewModel
+    var viewModel = MovieViewModel() // The ViewModel
     @IBOutlet weak var customNavBar: CustomNavigationView!
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
