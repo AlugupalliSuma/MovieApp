@@ -9,7 +9,7 @@ import Foundation
 
 class APIManager {
     static let shared = APIManager()
-    private let apiKey = "your_api_key" // Replace with your TMDb API key
+    private let apiKey = "abe3a426bfc2e84aee430b887801f0d3" // Replace with your TMDb API key
     private let baseURL = "https://api.themoviedb.org/3"
     
     // Fetch popular movies

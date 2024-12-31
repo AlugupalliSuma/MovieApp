@@ -9,22 +9,19 @@ import UIKit
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     private var viewModel = MovieViewModel() // The ViewModel
-    private let tableView = UITableView()
-    
+    @IBOutlet weak var customNavBar: CustomNavigationView!
+    @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Popular Movies"
+        customNavBar.configure("Popular Movies")
+        customNavBar.leftButton.isHidden = true
         setupTableView()
         bindViewModel()
         viewModel.fetchMovies() // Fetch movies via the ViewModel
     }
     
     private func setupTableView() {
-        tableView.frame = view.bounds
-        tableView.delegate = self
-        tableView.dataSource = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
-        view.addSubview(tableView)
     }
     
     // Binding the ViewModel to the View
@@ -51,7 +48,10 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     // TableView Delegate Method
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let movie = viewModel.getMovie(at: indexPath.row)
-        let movieDetailsVC = MovieDetailViewController(movieId: movie.id)
-        navigationController?.pushViewController(movieDetailsVC, animated: true)
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        if let movieDetailsVC = storyBoard.instantiateViewController(withIdentifier: "MovieDetailViewController") as? MovieDetailViewController{
+            movieDetailsVC.movieId = movie.id
+            self.navigationController?.pushViewController(movieDetailsVC, animated: true)
+        }
     }
 }

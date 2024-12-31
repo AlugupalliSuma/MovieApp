@@ -21,6 +21,9 @@
 		A0A58B2A2D23F2010047121B /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A58B292D23F2010047121B /* MovieDetailViewController.swift */; };
 		A0A58B2C2D23F28B0047121B /* Movie Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A58B2B2D23F28B0047121B /* Movie Data.swift */; };
 		A0A58B2F2D23F2B50047121B /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A58B2E2D23F2B50047121B /* ApiManager.swift */; };
+		A0A73CA82D242FE000F8AA87 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A73CA72D242FE000F8AA87 /* SplashViewController.swift */; };
+		A0A73CAB2D24312500F8AA87 /* CustomNavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0A73CA92D24312400F8AA87 /* CustomNavigationView.xib */; };
+		A0A73CAC2D24312500F8AA87 /* CustomNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A73CAA2D24312400F8AA87 /* CustomNavigationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		A0A58B292D23F2010047121B /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 		A0A58B2B2D23F28B0047121B /* Movie Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie Data.swift"; sourceTree = "<group>"; };
 		A0A58B2E2D23F2B50047121B /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		A0A73CA72D242FE000F8AA87 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		A0A73CA92D24312400F8AA87 /* CustomNavigationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomNavigationView.xib; sourceTree = "<group>"; };
+		A0A73CAA2D24312400F8AA87 /* CustomNavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,8 +166,11 @@
 		A0A58B262D23F1990047121B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A0A73CAA2D24312400F8AA87 /* CustomNavigationView.swift */,
+				A0A73CA92D24312400F8AA87 /* CustomNavigationView.xib */,
 				A0A58AF52D23F17A0047121B /* ViewController.swift */,
 				A0A58B292D23F2010047121B /* MovieDetailViewController.swift */,
+				A0A73CA72D242FE000F8AA87 /* SplashViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -281,6 +290,7 @@
 				A0A58B012D23F1820047121B /* LaunchScreen.storyboard in Resources */,
 				A0A58AFE2D23F1820047121B /* Assets.xcassets in Resources */,
 				A0A58AF92D23F17A0047121B /* Main.storyboard in Resources */,
+				A0A73CAB2D24312500F8AA87 /* CustomNavigationView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,9 +318,11 @@
 				A0A58B2F2D23F2B50047121B /* ApiManager.swift in Sources */,
 				A0A58AF62D23F17A0047121B /* ViewController.swift in Sources */,
 				A0A58B282D23F1B60047121B /* MovieViewModel.swift in Sources */,
+				A0A73CA82D242FE000F8AA87 /* SplashViewController.swift in Sources */,
 				A0A58AF22D23F17A0047121B /* AppDelegate.swift in Sources */,
 				A0A58B2C2D23F28B0047121B /* Movie Data.swift in Sources */,
 				A0A58AFC2D23F17A0047121B /* MovieApp.xcdatamodeld in Sources */,
+				A0A73CAC2D24312500F8AA87 /* CustomNavigationView.swift in Sources */,
 				A0A58B2A2D23F2010047121B /* MovieDetailViewController.swift in Sources */,
 				A0A58AF42D23F17A0047121B /* SceneDelegate.swift in Sources */,
 			);
